@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset = "UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+  <body>
+    <h1 class = "principalTitle">Recherche d'image chez SBHSKnow</h1>
+    <div class = "Formular">
+        <h4>Chercher par mots-clés</h4>
+        <label for = "search">Mots-clés :</label>
+        <input type = "text" id = "search" placeholder = "Entrer le mot-clé pour la recherche...">
+        <button onclick = "R_images()">Rechercher l'image</button>
+        <span id="messageErreur" style="color: red;float: justify"></span>
+        <br>
+        <br>
+        <div class = "cadres">
+          <div id = "affichageImages" class = "cadreImages"></div>
+          <div id="cadreSelectionne" class="cadreImages"></div>
+        </div>
+        <br>
+    </div>
+    <script src = "scripts.js"></script>
+    <br>
+  </body>
+</html>
