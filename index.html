@@ -4,22 +4,31 @@
     <meta charset = "UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""></script>
   </head>
   <body>
     <h1 class = "principalTitle">Recherche d'image chez SBHSKnow</h1>
-    <div class = "Formular">
+    <div>
         <h4>Chercher par mots-clés</h4>
         <label for = "search">Mots-clés :</label>
         <input type = "text" id = "search" placeholder = "Entrer le mot-clé pour la recherche...">
         <button onclick = "R_images()">Rechercher l'image</button>
+
         <span id="messageErreur" style="color: red;float: justify"></span>
         <br>
         <br>
+
         <div class = "cadres">
           <div id = "affichageImages" class = "cadreImages"></div>
           <div id="cadreSelectionne" class="cadreImages"></div>
         </div>
-        <br>
+        <br><br>
+        <div id="map"></div>
     </div>
     <script src = "scripts.js"></script>
     <br>
